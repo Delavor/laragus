@@ -16,6 +16,7 @@ class CompanyData
         public int|string|null $property_number,
         public int|string|null $apartment_number = null,
         public int|string|null $vat_id = null,
+        public int|string|null $regon = null,
     )
     {
     }
@@ -30,6 +31,7 @@ class CompanyData
             $report->getPropertyNumber(),
             $report->getApartmentNumber(),
             $report->getNip(),
+            $report->getRegon()
         );
     }
 
